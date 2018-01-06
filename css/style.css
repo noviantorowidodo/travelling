@@ -1,0 +1,97 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 100px;
+	margin-top: 30px; 
+}
+
+.navbar-inverse {
+    background-color: 	#282828;
+}
+
+.jumbotron {
+	min-height: 360px;
+	background-image: url('../img/header.jpg');
+	background-attachment: fixed;
+	background-size:  cover;
+	background-position: 0 -100px;
+	color: 	#E0E0E0	;
+}
+
+.jumbotron p {
+	font-family: “Duru Sans”, Verdana, sans-serif;
+	color: #333;
+}
+
+.jumbotron h1,.jumbotron p {
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+hr {
+	width: 190px;
+	border-top: 2px solid 	#484848;
+}
+
+h2 {
+
+	font-family: “Duru Sans”, Verdana, sans-serif;
+	color: #484848;
+}
+
+.promo {
+	min-height: 400px;
+}
+
+.pKiri, .pKanan{
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(15deg);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.galeri {
+	background-color: 	#E0E0E0;
+	min-height: 650px;
+}
+
+.galeri .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.galeri .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.kontak {
+	min-height: 700px;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: #282828;
+	padding-top: 30px;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 1em;
+}
+
+footer p i {
+	color: salmon;
+}
